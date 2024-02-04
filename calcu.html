@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>calcu</title>
+</head>
+<body>
+    <div class="container">
+        <fieldset id="container">
+            <form name="calculator">
+
+                <input id="display" type="text" name="display" readonly>
+
+                <input class="button digits" type="button" value="7" onclick="appendValue('7')">
+                <input class="button digits" type="button" value="8" onclick="appendValue('8')">
+                <input class="button digits" type="button" value="9" onclick="appendValue('9')">
+                <input class="button mathButtons" type="button" value="+" onclick="appendValue(' + ')">
+                <br>
+                <input class="button digits" type="button" value="4" onclick="appendValue('4')">
+                <input class="button digits" type="button" value="5" onclick="appendValue('5')">
+                <input class="button digits" type="button" value="6" onclick="appendValue('6')">
+                <input class="button mathButtons" type="button" value="-" onclick="appendValue(' - ')">
+                <br>
+                <input class="button digits" type="button" value="1" onclick="appendValue('1')">
+                <input class="button digits" type="button" value="2" onclick="appendValue('2')">
+                <input class="button digits" type="button" value="3" onclick="appendValue('3')">
+                <input class="button mathButtons" type="button" value="*" onclick="appendValue(' * ')">
+                <br>
+                <input id="clearButton" class="button" type="button" value="C" onclick="clearDisplay()">
+                <input class="button digits" type="button" value="0" onclick="appendValue('0')">
+                <input class="button mathButtons" type="button" value="/" onclick="appendValue(' / ')">
+                <input class="button mathButtons" type="button" value="=" onclick="evaluateExpression()">
+            </form>
+        </fieldset>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
